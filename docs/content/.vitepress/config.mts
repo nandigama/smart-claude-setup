@@ -1,10 +1,8 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
-  title: "Murali Nandigama's Personal Claude Manual",
+  title: "Murali's Claude Manual",
   description: 'Stop using Claude like Google. Use it like a staff engineer who knows your context.',
-  srcDir: '../content',
-  outDir: '../dist',
 
   themeConfig: {
     nav: [
@@ -46,6 +44,11 @@ export default defineConfig({
         ],
       },
     ],
+
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: '© 2026 Murali Nandigama, Ph.D.',
+    },
 
     search: { provider: 'local' },
 

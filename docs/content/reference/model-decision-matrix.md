@@ -4,33 +4,12 @@ Complete decision logic for picking the right Claude model and parameters.
 
 ## Primary Decision: Task Type
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│ HARD REASONING                                                    │
-│ Architecture · Strategy · Complex debugging · Proofs             │
-│ → claude-opus-4-8                                                 │
-│   thinking: { type: "adaptive" }                                  │
-│   output_config: { effort: "high" }                               │
-├─────────────────────────────────────────────────────────────────┤
-│ DRAFTS & GENERATION                                               │
-│ Writing · Code generation · Analysis · Standard Q&A              │
-│ → claude-sonnet-4-6   ← right default for most tasks             │
-│   output_config: { effort: "medium" }                             │
-│   (use effort: "high" for complex code or multi-step analysis)    │
-├─────────────────────────────────────────────────────────────────┤
-│ BULK PROCESSING                                                    │
-│ Classification · Tagging · Extraction · High-volume pipelines     │
-│ → claude-haiku-4-5                                                │
-│   Use Batches API for 50% cost reduction                          │
-│   max_tokens: 256 (classification) to 1024 (extraction)           │
-├─────────────────────────────────────────────────────────────────┤
-│ AGENTIC LOOPS                                                     │
-│ Long-running · Multi-step · Autonomous · Multiple tool calls      │
-│ → claude-opus-4-8                                                 │
-│   thinking: { type: "adaptive" }                                  │
-│   output_config: { effort: "xhigh" }                              │
-└─────────────────────────────────────────────────────────────────┘
-```
+| Task Type | Use Cases | Model | Parameters |
+|---|---|---|---|
+| **Hard Reasoning** | Architecture · Strategy · Complex debugging · Proofs | `claude-opus-4-8` | `thinking: { type: "adaptive" }`<br>`output_config: { effort: "high" }` |
+| **Drafts & Generation** | Writing · Code generation · Analysis · Standard Q&A | `claude-sonnet-4-6` ← default | `output_config: { effort: "medium" }`<br>(use `"high"` for complex code or multi-step analysis) |
+| **Bulk Processing** | Classification · Tagging · Extraction · High-volume pipelines | `claude-haiku-4-5` | Use Batches API for 50% cost reduction<br>`max_tokens: 256` (classification) to `1024` (extraction) |
+| **Agentic Loops** | Long-running · Multi-step · Autonomous · Multiple tool calls | `claude-opus-4-8` | `thinking: { type: "adaptive" }`<br>`output_config: { effort: "xhigh" }` |
 
 ## Secondary Decision: Extended Thinking
 

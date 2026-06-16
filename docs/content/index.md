@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: Right Claude Use
+  name: "My Claude Manual"
   text: Stop using Claude like Google.
   tagline: Use it like a staff engineer who knows your context.
   actions:
