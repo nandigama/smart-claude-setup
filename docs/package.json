@@ -1,0 +1,13 @@
+{
+  "name": "right-claude-use-docs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev content",
+    "build": "vitepress build content",
+    "preview": "vitepress preview content"
+  },
+  "devDependencies": {
+    "vitepress": "^1.3.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "right-claude-use",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Paved road for using Claude the right way — template repo, CLI, and docs",
+  "workspaces": [
+    "cli",
+    "docs"
+  ],
+  "scripts": {
+    "cli:dev": "npm run dev --workspace=cli",
+    "cli:build": "npm run build --workspace=cli",
+    "docs:dev": "npm run dev --workspace=docs",
+    "docs:build": "npm run build --workspace=docs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
