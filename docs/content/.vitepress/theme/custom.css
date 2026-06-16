@@ -1,0 +1,5 @@
+.VPHome ~ .VPFooter,
+.VPHome + .VPFooter,
+.Layout .VPFooter {
+  display: block !important;
+}
