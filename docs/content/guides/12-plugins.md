@@ -11,7 +11,7 @@ and tools it doesn't have by default.
 
 ## Finding Plugins
 
-Browse available plugins at [claude.ai/plugins](https://claude.ai/plugins).
+Browse available plugins at [claude.com/plugins](https://claude.com/plugins).
 
 Categories include:
 - **Sales** — CRM integrations, deal analysis, outreach workflows
@@ -24,7 +24,7 @@ Categories include:
 
 ## How to Install
 
-1. Go to claude.ai/plugins
+1. Go to claude.com/plugins
 2. Find a plugin for your use case
 3. Click Install and follow the authentication flow
 4. Type `/` in any conversation to see your installed plugins' commands
