@@ -1,7 +1,4 @@
-# Right Claude Use
-
-Resume this session with:
-claude --resume 95a1b5c9-d3c1-4299-88fb-7904b61e2b52
+# Murali's  Claude Use Guide
 
 
 > Stop using Claude like Google. Start using it like a staff engineer who knows your context.
