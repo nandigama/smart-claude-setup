@@ -3,6 +3,8 @@ node_modules/
 .pnp
 .pnp.js
 .idea/
+.claude/
+.github/
 # Build outputs
 dist/
 out/
