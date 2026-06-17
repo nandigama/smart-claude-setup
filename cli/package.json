@@ -1,6 +1,6 @@
 {
   "name": "create-smart-claude",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Scaffold a Claude project the right way — ABOUT_ME, TEMPLATES, CLAUDE_OUTPUTS, Skills, and global instructions in one command",
   "type": "module",
   "bin": {
