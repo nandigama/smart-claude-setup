@@ -13,9 +13,9 @@ Answer 5 questions. Done.
 ## Option 2 — Template Repo
 
 1. Clone or fork this repo
-2. Copy the `templates/` folder into your project
+2. Copy the contents inside the `templates/` folder into your project
 3. Fill in the `<!-- Fill in: ... -->` placeholders in `ABOUT_ME/`
-4. Paste `global-instructions/developer.md` (or `business-user.md`) into Claude → Settings → Global Instructions
+4. Add `@global-instructions/developer.md` (or `@global-instructions/business-user.md`) to your `.claude/CLAUDE.md`
 
 ## What You Get
 
@@ -29,7 +29,7 @@ your-project/
 ├── .claude/
 │   ├── CLAUDE.md           ← Project-level instructions
 │   └── skills/             ← Slash commands
-└── global-instructions/    ← Paste into Claude Settings
+└── global-instructions/    ← Referenced via @ in CLAUDE.md
 ```
 
 ## First Things First
@@ -37,7 +37,7 @@ your-project/
 **Do these in order:**
 
 1. **Fill in `ABOUT_ME/role.md`** — this single file cuts your prompt length in half
-2. **Paste your global instructions** — copy `global-instructions/developer.md` or `business-user.md` into Claude → Settings → Edit Global Instructions
+2. **Wire up your global instructions** — add `@global-instructions/developer.md` (or `business-user.md`) to the top of your `.claude/CLAUDE.md`
 3. **Test a skill** — open Claude Code and type `/model-select` to verify skills are working
 
 ## The Most Common Mistake

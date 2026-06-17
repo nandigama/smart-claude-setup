@@ -1,11 +1,4 @@
-/**
- * Simple {{VAR}} substitution engine.
- * Intentionally dependency-free — one function, zero runtime cost.
- */
+// Simple {{VAR}} substitution. Leaves unknown tokens as-is so callers can spot missing vars.
 export function render(template: string, vars: Record<string, string | undefined>): string {
   return template.replace(/\{\{(\w+)\}\}/g, (_, key) => vars[key] ?? `{{${key}}}`);
-}
-
-export function renderFile(content: string, vars: Record<string, string | undefined>): string {
-  return render(content, vars);
 }

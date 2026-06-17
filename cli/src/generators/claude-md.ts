@@ -1,22 +1,25 @@
 import path from 'path';
 import { writeFile } from '../utils/file-writer.js';
-import type { SkillName } from './skills.js';
+import { SKILLS, type SkillName } from './skills.js';
 
-const SKILL_TABLE_HEADER = `| Command | What It Does |
-|---|---|`;
+export async function generateClaudeMd(
+  outputDir: string,
+  skills: SkillName[],
+  audience: 'developer' | 'business-user' | 'both'
+): Promise<void> {
+  const globalInstructionsRef =
+    audience === 'both'
+      ? '@global-instructions/developer.md\n@global-instructions/business-user.md'
+      : `@global-instructions/${audience}.md`;
 
-const SKILL_TABLE_ROWS: Record<SkillName, string> = {
-  'negotiation-prep': '| `/negotiation-prep` | Prepare for any negotiation or difficult conversation |',
-  'weekly-review': '| `/weekly-review` | Run a structured weekly review against your goals |',
-  'client-brief': '| `/client-brief` | Generate a client-facing project brief |',
-  'model-select': '| `/model-select` | Choose the right Claude model for your current task |',
-  'ask-first': '| `/ask-first` | Enable ask-before-act mode for this session |',
-};
-
-export async function generateClaudeMd(outputDir: string, skills: SkillName[]): Promise<void> {
   const skillTable =
     skills.length > 0
-      ? `## Available Skills\n\n${SKILL_TABLE_HEADER}\n${skills.map((s) => SKILL_TABLE_ROWS[s]).join('\n')}`
+      ? [
+          '## Available Skills\n',
+          '| Command | What It Does |',
+          '|---|---|',
+          ...skills.map((s) => `| \`/${s}\` | ${SKILLS[s]} |`),
+        ].join('\n')
       : '';
 
   const content = `# Claude Project Instructions
@@ -35,6 +38,12 @@ This file is read automatically by Claude Code at the start of every session.
 ## My Rules
 
 @ABOUT_ME/rules.md
+
+---
+
+## My Instructions
+
+${globalInstructionsRef}
 
 ---
 

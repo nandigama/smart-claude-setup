@@ -89,7 +89,16 @@ function getRecommendation(
     };
   }
 
-  if (taskType === 'reasoning' && (quality === 'quality' || extendedThinking)) {
+  if (taskType === 'reasoning') {
+    if (quality === 'cost') {
+      return {
+        model: 'claude-sonnet-4-6',
+        why: 'Sonnet 4.6 with high effort covers 80% of reasoning tasks at ~60% of Opus cost. Use Opus when this falls short.',
+        params: { model: 'claude-sonnet-4-6', output_config: { effort: 'high' } },
+        cost: '~$0.05–$0.15 per task',
+        alternative: 'claude-opus-4-8 (thinking: adaptive, effort: high) for the hardest problems',
+      };
+    }
     return {
       model: 'claude-opus-4-8',
       why: 'Complex reasoning and strategy problems benefit from adaptive thinking. Opus 4.8 produces the highest-quality output for hard problems.',
@@ -99,7 +108,7 @@ function getRecommendation(
         output_config: { effort: extendedThinking ? 'high' : 'medium' },
       },
       cost: '~$0.15–$0.50 per complex task',
-      alternative: quality === 'cost' ? 'claude-sonnet-4-6 (effort: high) covers 80% of reasoning tasks at ~60% of the cost' : undefined,
+      alternative: quality === 'balance' ? 'claude-sonnet-4-6 (effort: high) covers 80% of reasoning tasks at ~60% of the cost' : undefined,
     };
   }
 

@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
-  title: "Murali Nandigama's Personal Claude Manual",
+  title: 'Smart Claude Setup',
   description: 'Stop using Claude like Google. Use it like a staff engineer who knows your context.',
   srcDir: '../content',
   outDir: '../dist',

@@ -10,7 +10,7 @@ import { ensureDir, writeFile } from '../utils/file-writer.js';
 
 export async function runInit(): Promise<void> {
   p.intro(chalk.bold.cyan('Create Claude Project'));
-  console.log(chalk.dim('Scaffold the Right Claude Use setup in under 60 seconds.\n'));
+  console.log(chalk.dim('Scaffold the Smart Claude Setup in under 60 seconds.\n'));
 
   const audience = await p.select({
     message: 'Who are you setting this up for?',
@@ -119,9 +119,9 @@ export async function runInit(): Promise<void> {
     await generateAboutMe(resolvedOutput, vars);
     await generateGlobalInstructions(resolvedOutput, audience as 'developer' | 'business-user' | 'both', vars);
 
-    const skills = (selectedSkills as SkillName[]) ?? [];
+    const skills = selectedSkills as SkillName[];
     await generateSkills(resolvedOutput, skills);
-    await generateClaudeMd(resolvedOutput, skills);
+    await generateClaudeMd(resolvedOutput, skills, audience as 'developer' | 'business-user' | 'both');
 
     // Create TEMPLATES/ and CLAUDE_OUTPUTS/
     await ensureDir(path.join(resolvedOutput, 'TEMPLATES'));
@@ -142,12 +142,13 @@ export async function runInit(): Promise<void> {
     process.exit(1);
   }
 
+  const installedSkills = selectedSkills as SkillName[];
   p.outro(
     chalk.bold('\nYour Claude setup is ready. Next steps:\n') +
     `  1. Open ${chalk.cyan('ABOUT_ME/role.md')} and fill in your details\n` +
     `  2. Copy ${chalk.cyan('global-instructions/')} content into Claude → Settings → Global Instructions\n` +
-    (selectedSkills && (selectedSkills as SkillName[]).length > 0
-      ? `  3. In Claude Code, type ${chalk.cyan('/' + (selectedSkills as SkillName[])[0])} to try your first skill\n`
+    (installedSkills.length > 0
+      ? `  3. In Claude Code, type ${chalk.cyan('/' + installedSkills[0])} to try your first skill\n`
       : '')
   );
 }
@@ -156,8 +157,7 @@ function getTemplatesReadme(): string {
   return `# TEMPLATES/
 
 Reusable prompt patterns for your most common Claude tasks.
-
-See the full templates at: https://github.com/your-org/right-claude-use/tree/main/templates/TEMPLATES
+Add your own prompt templates here as Markdown files.
 `;
 }
 
