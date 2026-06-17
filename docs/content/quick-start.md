@@ -5,7 +5,7 @@ Get the full setup running in 10 minutes.
 ## Option 1 — CLI (Fastest)
 
 ```bash
-npm create claude-project
+npm create smart-claude
 ```
 
 Answer 5 questions. Done.

@@ -1,11 +1,11 @@
-# create-claude-project
+# create-smart-claude
 
 Scaffold a Claude project the right way in under 60 seconds.
 
 ## Usage
 
 ```bash
-npm create claude-project
+npm create smart-claude
 ```
 
 No install required. Asks 5-7 questions, then generates:
@@ -20,10 +20,10 @@ No install required. Asks 5-7 questions, then generates:
 
 ```bash
 # Add a single skill to an existing project
-npx create-claude-project add-skill weekly-review
+npx create-smart-claude add-skill weekly-review
 
 # Run the interactive model selection guide
-npx create-claude-project model-select
+npx create-smart-claude model-select
 ```
 
 ## Available Skills

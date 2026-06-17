@@ -114,7 +114,7 @@ the right output — without you re-explaining the format every time.
 
 **Option 1 — CLI**:
 ```bash
-npx create-claude-project add-skill weekly-review
+npx create-smart-claude add-skill weekly-review
 ```
 
 **Option 2 — Manual**: Copy the `SKILL.md` from `templates/.claude/skills/<skill-name>/` into `.claude/skills/<skill-name>/SKILL.md` in your project.

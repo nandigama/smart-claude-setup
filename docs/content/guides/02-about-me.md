@@ -66,4 +66,4 @@ If you're still writing "I'm a [role] at [company]..." — your ABOUT ME isn't w
 ## Template
 
 The pre-built templates are in `templates/ABOUT_ME/`. Fill in the `<!-- Fill in: ... -->` sections.
-Or run `npm create claude-project` to generate them with your details pre-filled.
+Or run `npm create smart-claude` to generate them with your details pre-filled.

@@ -1,10 +1,10 @@
 {
-  "name": "create-claude-project",
+  "name": "create-smart-claude",
   "version": "1.0.0",
   "description": "Scaffold a Claude project the right way — ABOUT_ME, TEMPLATES, CLAUDE_OUTPUTS, Skills, and global instructions in one command",
   "type": "module",
   "bin": {
-    "create-claude-project": "./dist/index.js"
+    "create-smart-claude": "./dist/index.js"
   },
   "scripts": {
     "dev": "tsx src/index.ts",

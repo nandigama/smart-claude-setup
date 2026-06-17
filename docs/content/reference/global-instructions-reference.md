@@ -107,7 +107,7 @@ Use the pre-built templates as a starting point:
 - `templates/global-instructions/developer.md` — for Claude Code users
 - `templates/global-instructions/business-user.md` — for Claude.ai Projects users
 
-Run `npm create claude-project` to generate a version pre-filled with your details.
+Run `npm create smart-claude` to generate a version pre-filled with your details.
 
 ## Maintenance
 

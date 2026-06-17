@@ -66,7 +66,7 @@ Searching for that brief three weeks later takes one second instead of scrolling
 
 ## Setting It Up
 
-**Option 1**: Run `npm create claude-project` — generates all three folders automatically.
+**Option 1**: Run `npm create smart-claude` — generates all three folders automatically.
 
 **Option 2**: Copy `templates/` from this repo, then fill in the placeholders.
 
