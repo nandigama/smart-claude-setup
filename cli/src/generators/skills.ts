@@ -138,7 +138,11 @@ export const SKILL_DESCRIPTIONS = SKILLS;
 
 function getTemplatesRoot(): string {
   const thisFile = fileURLToPath(import.meta.url);
-  return path.resolve(thisFile, '..', '..', '..', '..', 'templates');
+  // When bundled (dist/index.js), package root is 2 levels up.
+  // When running from source (src/generators/skills.ts), repo root is 4 levels up.
+  const normalized = thisFile.replace(/\\/g, '/');
+  const levels = normalized.includes('/dist/') ? 2 : 4;
+  return path.resolve(thisFile, ...Array(levels).fill('..'), 'templates');
 }
 
 export async function generateSkills(outputDir: string, skills: SkillName[]): Promise<void> {

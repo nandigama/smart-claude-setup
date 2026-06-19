@@ -27,7 +27,8 @@
     "node": ">=18.0.0"
   },
   "files": [
-    "dist"
+    "dist",
+    "templates"
   ],
   "keywords": [
     "claude",

@@ -1,6 +1,6 @@
 {
   "name": "smart-claude-setup",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "private": true,
   "description": "Paved road for using Claude the right way — template repo, CLI, and docs",
   "workspaces": [
