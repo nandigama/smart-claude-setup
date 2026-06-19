@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   title: 'Smart Claude Setup',
   description: 'Stop using Claude like Google. Use it like a staff engineer who knows your context.',
+  base: '/smart-claude-setup/',
   srcDir: '../content',
   outDir: '../dist',
 
