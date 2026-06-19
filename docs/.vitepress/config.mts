@@ -50,7 +50,7 @@ export default defineConfig({
     search: { provider: 'local' },
 
     socialLinks: [
-      { icon: 'github', link: 'https://git.mkngama.com/nandigama/right-claude-use' },
+      { icon: 'github', link: 'https://github.com/nandigama/smart-claude-setup' },
     ],
   },
 });
