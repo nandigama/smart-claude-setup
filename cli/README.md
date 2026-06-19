@@ -8,7 +8,7 @@ Scaffold a Claude project the right way in under 60 seconds.
 npm create smart-claude
 ```
 
-No install required. Answers a few questions, then generates:
+No install required. Asks a few questions, then generates:
 - `ABOUT_ME/` with role, goals, rules, and writing-samples folder
 - `TEMPLATES/` with reusable prompt patterns
 - `CLAUDE_OUTPUTS/` for deliverables
