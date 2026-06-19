@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsup src/index.ts --format esm --dts --clean",
+    "prepack": "node scripts/copy-templates.js",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
