@@ -8,7 +8,7 @@ Running everything on one model is like using a chef's knife to open mail.
 |---|---|---|
 | **Opus 4.8** | `claude-opus-4-8` | Hard reasoning, complex coding, long-running agents |
 | **Sonnet 4.6** | `claude-sonnet-4-6` | Drafts, standard code, balanced tasks — the right default |
-| **Haiku 4.5** | `claude-haiku-4-5` | Bulk processing, classification, extraction at scale |
+| **Haiku 4.5** | `claude-haiku-4-5-20251001` | Bulk processing, classification, extraction at scale |
 
 ## The Decision
 
@@ -22,7 +22,7 @@ Drafts, code generation, standard analysis, Q&A
 → claude-sonnet-4-6   ← right default for most things
 
 Classification, tagging, extraction at high volume
-→ claude-haiku-4-5
+→ claude-haiku-4-5-20251001
 
 Long-running agent workflows (multiple tool calls, autonomous)
 → claude-opus-4-8 (effort: xhigh)

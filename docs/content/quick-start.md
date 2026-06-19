@@ -8,7 +8,7 @@ Get the full setup running in 10 minutes.
 npm create smart-claude
 ```
 
-Answer 5 questions. Done.
+Answer a few questions. Done.
 
 ## Option 2 — Template Repo
 

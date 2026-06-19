@@ -8,7 +8,7 @@ Complete decision logic for picking the right Claude model and parameters.
 |---|---|---|---|
 | **Hard Reasoning** | Architecture · Strategy · Complex debugging · Proofs | `claude-opus-4-8` | `thinking: { type: "adaptive" }`<br>`output_config: { effort: "high" }` |
 | **Drafts & Generation** | Writing · Code generation · Analysis · Standard Q&A | `claude-sonnet-4-6` ← default | `output_config: { effort: "medium" }`<br>(use `"high"` for complex code or multi-step analysis) |
-| **Bulk Processing** | Classification · Tagging · Extraction · High-volume pipelines | `claude-haiku-4-5` | Use Batches API for 50% cost reduction<br>`max_tokens: 256` (classification) to `1024` (extraction) |
+| **Bulk Processing** | Classification · Tagging · Extraction · High-volume pipelines | `claude-haiku-4-5-20251001` | Use Batches API for 50% cost reduction<br>`max_tokens: 256` (classification) to `1024` (extraction) |
 | **Agentic Loops** | Long-running · Multi-step · Autonomous · Multiple tool calls | `claude-opus-4-8` | `thinking: { type: "adaptive" }`<br>`output_config: { effort: "xhigh" }` |
 
 ## Secondary Decision: Extended Thinking
@@ -46,7 +46,7 @@ The output quality on hard problems is substantially better.
 |---|---|---|---|
 | Opus 4.8 | `claude-opus-4-8` | 1M tokens | Hard reasoning, agents, complex code |
 | Sonnet 4.6 | `claude-sonnet-4-6` | 1M tokens | Drafts, standard code, balanced tasks |
-| Haiku 4.5 | `claude-haiku-4-5` | 200K tokens | Bulk processing, speed, cost |
+| Haiku 4.5 | `claude-haiku-4-5-20251001` | 200K tokens | Bulk processing, speed, cost |
 
 ## Cost Guide (Approximate)
 
@@ -84,7 +84,7 @@ The output quality on hard problems is substantially better.
 **Bulk classification (Haiku + Batch API)**:
 ```json
 {
-  "model": "claude-haiku-4-5",
+  "model": "claude-haiku-4-5-20251001",
   "max_tokens": 256
 }
 ```

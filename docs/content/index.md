@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "My Claude Manual"
+  name: "Smart Claude Setup"
   text: Stop using Claude like Google.
   tagline: Use it like a staff engineer who knows your context.
   actions:
@@ -17,7 +17,7 @@ features:
   - title: GitHub Template Repo
     details: Clone the templates/ folder — pre-built ABOUT_ME, TEMPLATES, CLAUDE_OUTPUTS, Skills, and global instructions. Fill in your details and go.
   - title: CLI Scaffolding Tool
-    details: Run `npm create smart-claude`. Answer 5 questions. Get your entire setup generated in under 60 seconds.
+    details: Run `npm create smart-claude`. Answer a few questions. Get your entire setup generated in under 60 seconds.
   - title: 12 Actionable Guides
     details: One guide per guideline. No theory — just what to do, how to do it, and the copy-paste to make it work.
 ---
