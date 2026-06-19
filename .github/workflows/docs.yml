@@ -6,6 +6,7 @@ on:
     paths:
       - 'docs/**'
       - '.github/workflows/docs.yml'
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -25,6 +26,7 @@ jobs:
         with:
           node-version: 20
           cache: npm
+      - uses: actions/configure-pages@v5
       - run: npm ci --workspace=docs
       - run: npm run build --workspace=docs
       - uses: actions/upload-pages-artifact@v3
@@ -32,12 +34,11 @@ jobs:
           path: docs/content/.vitepress/dist
 
   deploy:
+    needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4
