@@ -78,7 +78,7 @@ export async function runInit(): Promise<void> {
 
   const selectedSkills = await p.multiselect({
     message: 'Which pre-built skills do you want to install?',
-    options: skillOptions,
+    options: skillOptions as any[],
     required: false,
   });
 

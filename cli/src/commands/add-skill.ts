@@ -14,7 +14,7 @@ export async function runAddSkill(skillArg?: string): Promise<void> {
       message: 'Which skill do you want to add?',
       options: (Object.entries(SKILL_DESCRIPTIONS) as [SkillName, string][]).map(
         ([value, hint]) => ({ value, label: `/${value}`, hint })
-      ),
+      ) as any[],
     });
     if (p.isCancel(selected)) return p.cancel('Cancelled.');
     skill = selected as SkillName;
