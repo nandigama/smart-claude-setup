@@ -60,6 +60,7 @@ export type SkillName =
   | 'spec-to-repo'
   | 'tailored-resume-generator'
   | 'tdd-guide'
+  | 'teach'
   | 'tech-debt-tracker'
   | 'tech-stack-evaluator'
   | 'ux-researcher'
@@ -125,6 +126,7 @@ export const SKILLS: Record<SkillName, string> = {
   'spec-to-repo': 'Turn a specification, PRD, or feature description into a scaffolded repository plan — directory structure, key files, implementation sequence, and starter code.',
   'tailored-resume-generator': 'Tailor your resume to a specific job description — highlights relevant experience, optimizes for ATS keyword matching, and strengthens impact statements.',
   'tdd-guide': 'Guide test-driven development for a specific piece of functionality — write failing tests first, then implement to make them pass. Red → Green → Refactor.',
+  'teach': 'Five-phase Socratic teaching loop: calibrate to the learner, teach at their level, test with 6 questions, fix only the gaps, then compress everything into a one-page keeper.',
   'tech-debt-tracker': 'Identify, categorize, and prioritize technical debt in a codebase or system. Produces a debt register with effort/impact scores and a sequenced paydown plan.',
   'tech-stack-evaluator': 'Evaluate and compare technology choices with a structured trade-off analysis — framework, database, cloud provider, language, or any architectural decision. Produces a scored comparison and a clear recommendation.',
   'ux-researcher': 'User research workflows — interview guide design, synthesis, insight extraction, and persona development. Produces research artifacts ready to share with product and design teams.',

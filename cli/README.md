@@ -26,7 +26,7 @@ npx create-smart-claude add-skill weekly-review
 npx create-smart-claude model-select
 ```
 
-## Available Skills (61)
+## Available Skills (62)
 
 Install any skill with `npx create-smart-claude add-skill <skill-name>`.
 
@@ -40,6 +40,7 @@ Install any skill with `npx create-smart-claude add-skill <skill-name>`.
 | `/email-triage` | Design inbox rules and triage an overloaded inbox |
 | `/email-pair` | Collaborative email drafting: you write rough, Claude refines |
 | `/andreessen` | Market-first decision framework for evaluating opportunities |
+| `/teach` | Five-phase Socratic teaching loop: calibrate, teach, test, fix gaps, compress into a keeper |
 
 ### Workflow
 
