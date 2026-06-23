@@ -12,7 +12,7 @@ the right output — without you re-explaining the format every time.
 
 ## Pre-Built Skills in This Repo
 
-61 skills are ready to install across six categories:
+62 skills are ready to install across six categories:
 
 ### Productivity (for everyone)
 
@@ -24,6 +24,7 @@ the right output — without you re-explaining the format every time.
 | `/email-triage` | Design inbox rules and triage an overloaded inbox |
 | `/email-pair` | Collaborative email drafting: you write rough, Claude refines |
 | `/andreessen` | Market-first decision framework for evaluating opportunities |
+| `/teach` | Five-phase Socratic teaching loop: calibrate, teach, test, fix gaps, compress into a keeper |
 
 ### Workflow (for everyone)
 

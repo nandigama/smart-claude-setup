@@ -7,7 +7,7 @@ This repo is the **paved road** — three things you can use right now to get 10
 
 | | What it gives you |
 |---|---|
-| **[Template Repo](#template-repo)** | Pre-built `ABOUT_ME/`, `TEMPLATES/`, `CLAUDE_OUTPUTS/` folders + 61 Skills + global instructions templates. Clone and fill in your details. |
+| **[Template Repo](#template-repo)** | Pre-built `ABOUT_ME/`, `TEMPLATES/`, `CLAUDE_OUTPUTS/` folders + 62 Skills + global instructions templates. Clone and fill in your details. |
 | **[CLI Tool](#cli-tool)** | `npm create smart-claude` — interactive scaffolding that generates the full setup in under 60 seconds. |
 | **[Documentation](#documentation)** | One guide per guideline, plus a model decision matrix and skill format reference. |
 
@@ -26,7 +26,7 @@ templates/
 ├── CLAUDE_OUTPUTS/    ← Where deliverables land
 ├── .claude/
 │   ├── CLAUDE.md      ← Project-level instructions
-│   └── skills/        ← 61 pre-built slash commands
+│   └── skills/        ← 62 pre-built slash commands
 └── global-instructions/
     ├── developer.md   ← Paste into Claude Settings (for devs)
     └── business-user.md ← Paste into Claude Settings (for biz users)
@@ -72,7 +72,7 @@ See [cli/README.md](cli/README.md) for full documentation.
 | 4 | Set global instructions once | `templates/global-instructions/` |
 | 5 | Force it to ask before it acts | `/ask-first` skill |
 | 6 | Use Connectors | Guide |
-| 7 | Turn repeat workflows into Skills | 61 pre-built skills |
+| 7 | Turn repeat workflows into Skills | 62 pre-built skills |
 | 8 | Pick the right model | `/model-select` skill + reference |
 | 9 | Extended Thinking for hard problems | Guide + model reference |
 | 10 | Feed examples, not descriptions | Guide + `writing-samples/` folder |

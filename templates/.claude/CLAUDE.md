@@ -34,6 +34,7 @@ It is read automatically by Claude Code at the start of every session.
 ### Workflow
 | Command | What It Does |
 |---|---|
+| `/teach` | Five-phase Socratic teaching loop: calibrate, teach, test, fix gaps, compress into a keeper |
 | `/negotiation-prep` | Prepare for any negotiation or difficult conversation |
 | `/weekly-review` | Run a structured weekly review against your goals |
 | `/client-brief` | Generate a client-facing project brief |
