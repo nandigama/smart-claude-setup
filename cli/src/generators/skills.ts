@@ -45,6 +45,7 @@ export type SkillName =
   | 'pr-review-expert'
   | 'process-mapper'
   | 'product-manager'
+  | 'py-clean-arch'
   | 'rag-architect'
   | 'reflect'
   | 'research-pulse'
@@ -63,6 +64,7 @@ export type SkillName =
   | 'teach'
   | 'tech-debt-tracker'
   | 'tech-stack-evaluator'
+  | 'unblock'
   | 'ux-researcher'
   | 'vendor-management'
   | 'webapp-testing'
@@ -111,6 +113,7 @@ export const SKILLS: Record<SkillName, string> = {
   'pr-review-expert': 'Full pull request review — diff analysis, risk assessment, test coverage check, and a clear approve / request-changes verdict with specific inline feedback.',
   'process-mapper': 'Document and analyze a business process — map the current state, identify bottlenecks and waste, and design the improved future state.',
   'product-manager': 'Full PM toolkit — write PRDs, prioritize with RICE, build roadmaps, or translate strategy into sprint-ready stories. Specify the output type and Claude produces it.',
+  'py-clean-arch': 'Apply the pragmatic Clean Architecture pattern (four virtual layers — domain, application, infrastructure, serving) when scaffolding or reviewing a Python AI project (agents, workflows, LLM apps).',
   'rag-architect': 'Design a retrieval-augmented generation (RAG) pipeline — chunking strategy, embedding model, vector store, retrieval pattern, and evaluation approach. Produces an implementable RAG spec.',
   'reflect': 'Guided reflection session — clarify what you\'re feeling, what\'s working, and what decision or situation is weighing on you. Produces insight, not just summary.',
   'research-pulse': 'Quick literature pulse on a topic — what\'s known, what\'s debated, key papers, and open questions. 15-minute deep-dive that surfaces the research landscape without a full literature review.',
@@ -129,6 +132,7 @@ export const SKILLS: Record<SkillName, string> = {
   'teach': 'Five-phase Socratic teaching loop: calibrate to the learner, teach at their level, test with 6 questions, fix only the gaps, then compress everything into a one-page keeper.',
   'tech-debt-tracker': 'Identify, categorize, and prioritize technical debt in a codebase or system. Produces a debt register with effort/impact scores and a sequenced paydown plan.',
   'tech-stack-evaluator': 'Evaluate and compare technology choices with a structured trade-off analysis — framework, database, cloud provider, language, or any architectural decision. Produces a scored comparison and a clear recommendation.',
+  'unblock': 'Break an intimidating, overwhelming, or procrastinated task into small, immediately startable micro-tasks with a concrete first action — and, for writing tasks, an actual first sentence.',
   'ux-researcher': 'User research workflows — interview guide design, synthesis, insight extraction, and persona development. Produces research artifacts ready to share with product and design teams.',
   'vendor-management': 'Vendor evaluation, contract review, renewal negotiation, and performance tracking. Makes vendor decisions defensible and vendor relationships productive.',
   'webapp-testing': 'Test a locally running web app using Playwright — verify UI functionality, debug behavior, capture screenshots, and identify broken flows.',

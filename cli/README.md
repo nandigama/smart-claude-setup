@@ -26,7 +26,7 @@ npx create-smart-claude add-skill weekly-review
 npx create-smart-claude model-select
 ```
 
-## Available Skills (62)
+## Available Skills (64)
 
 Install any skill with `npx create-smart-claude add-skill <skill-name>`.
 
@@ -41,6 +41,7 @@ Install any skill with `npx create-smart-claude add-skill <skill-name>`.
 | `/email-pair` | Collaborative email drafting: you write rough, Claude refines |
 | `/andreessen` | Market-first decision framework for evaluating opportunities |
 | `/teach` | Five-phase Socratic teaching loop: calibrate, teach, test, fix gaps, compress into a keeper |
+| `/unblock` | Break an overwhelming task into small, startable micro-tasks |
 
 ### Workflow
 
@@ -103,6 +104,7 @@ Install any skill with `npx create-smart-claude add-skill <skill-name>`.
 | `/skill-creator` | Design and write a new SKILL.md from a workflow idea |
 | `/agent-designer` | Design AI agent architectures: roles, tools, memory, orchestration |
 | `/rag-architect` | Design RAG pipelines: chunking, embedding, retrieval, evaluation |
+| `/py-clean-arch` | Clean Architecture for Python AI projects (agents, workflows, LLM apps) |
 | `/code-reviewer` | Code review: correctness, security, performance, maintainability |
 | `/pr-review-expert` | Full PR review: diff analysis, risk, test coverage, verdict |
 | `/tech-debt-tracker` | Identify and prioritize tech debt with a paydown plan |

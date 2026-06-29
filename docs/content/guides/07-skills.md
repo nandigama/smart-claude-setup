@@ -12,7 +12,7 @@ the right output — without you re-explaining the format every time.
 
 ## Pre-Built Skills in This Repo
 
-62 skills are ready to install across six categories:
+64 skills are ready to install across six categories:
 
 ### Productivity (for everyone)
 
@@ -25,6 +25,7 @@ the right output — without you re-explaining the format every time.
 | `/email-pair` | Collaborative email drafting: you write rough, Claude refines |
 | `/andreessen` | Market-first decision framework for evaluating opportunities |
 | `/teach` | Five-phase Socratic teaching loop: calibrate, teach, test, fix gaps, compress into a keeper |
+| `/unblock` | Break an overwhelming task into small, immediately startable micro-tasks |
 
 ### Workflow (for everyone)
 
@@ -87,6 +88,7 @@ the right output — without you re-explaining the format every time.
 | `/skill-creator` | Design and write a new SKILL.md from a workflow idea |
 | `/agent-designer` | Design AI agent architectures: roles, tools, memory, orchestration |
 | `/rag-architect` | Design RAG pipelines: chunking, embedding, retrieval, evaluation |
+| `/py-clean-arch` | Clean Architecture (domain, application, infrastructure, serving) for Python AI projects |
 | `/code-reviewer` | Code review: correctness, security, performance, maintainability |
 | `/pr-review-expert` | Full PR review: diff analysis, risk, test coverage, verdict |
 | `/tech-debt-tracker` | Identify and prioritize tech debt with a paydown plan |
